@@ -1,0 +1,134 @@
+.body {
+  background-color: rgb(57, 57, 57);
+}
+
+.header {
+  text-align: center;
+  color: aliceblue;
+  color: orange;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 0 10px;
+  margin-left: 30px;
+}
+
+.calculateButton {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.button {
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+}
+.button:active {
+  box-shadow: 0 0 10px white;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  color: aliceblue;
+  margin-top: 40px;
+  background-color: rgba(240, 248, 255, 0.961);
+  border-radius: 10px;
+}
+
+.tableHead {
+  width: 100%;
+  background-color: orange;
+  color: Black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+h4 {
+  width: 50%;
+  text-align: center;
+  margin: 15px;
+}
+
+.tableRow {
+  width: 100%;
+  /* background-color: orange; */
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.goldImageLeft {
+  height: 150px;
+  width: auto;
+  margin-left: 10%;
+  position: absolute;
+  top: 70%;
+}
+
+.goldImageRight {
+  height: 220px;
+  width: auto;
+  margin-right: 10%;
+  position: absolute;
+  right: 0;
+}
+
+.footer {
+  color: aliceblue;
+  font-size: 12px;
+  text-align: end;
+  position: absolute;
+  top: 90%;
+  right: 3%;
+}
+
+.footerCreated {
+  margin-bottom: 0;
+}
+.footerName {
+  margin-top: 0;
+}
+
+@media all and (max-width: 600px) {
+  .goldImageLeft {
+    visibility: hidden;
+  }
+  .goldImageRight {
+    /* visibility: hidden; */
+    margin-left: 0%;
+    left: 30%;
+    top: 70%;
+    /* position: relative; */
+  }
+  .inputDiv {
+    flex-direction: column;
+    padding: 0 30px;
+    align-items: center;
+  }
+  .input {
+    margin-left: 0px;
+    width: 20%;
+  }
+  .table {
+    width: 80%;
+  }
+}
