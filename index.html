@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gold Price Calculator</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="body">
     <div class="header">
       <h1>Gold Price Calculator</h1>
     </div>
-    <img src="./pngtree-gold-block-metal-bank-value-png-image_3397634-removebg-preview.png" class="goldImageRight" />
+    <img
+      src="./pngtree-gold-block-metal-bank-value-png-image_3397634-removebg-preview.png"
+      class="goldImageRight"
+    />
     <img src="./gold_PNG101017.png" class="goldImageLeft" />
     <div class="inputDiv">
-      <p>Enter The Current 24 Carat Gold Price in INR</p>
+      <p>Enter 1 Gram - 24 Carat Gold Price INR</p>
       <input type="number" class="input" />
     </div>
     <div class="calculateButton">
@@ -22,30 +25,80 @@
     </div>
     <div class="table">
       <div class="tableHead">
-        <h4>Carats</h3>
-        <h4>Price in INR</h3>
+        <h4 class="items">Carats</h4>
+        <h4 class="items">Price in INR</h4>
       </div>
       <div class="tableRow">
-        <h4>24 Carat</h3>
-        <h4 class="_24_caret">-</h3>
+        <h4 class="items">24 Carat</h4>
+        <h4 class="_24_caret items">₹ 0.00</h4>
       </div>
       <div class="tableRow">
-        <h4>22 Carat</h3>
-        <h4 class="_22_caret">-</h3>
+        <h4 class="items">22 Carat</h4>
+        <h4 class="_22_caret items">₹ 0.00</h4>
       </div>
       <div class="tableRow">
-        <h4>20 Carat</h3>
-        <h4 class="_20_caret">-</h3>
+        <h4 class="items">20 Carat</h4>
+        <h4 class="_20_caret items">₹ 0.00</h4>
       </div>
       <div class="tableRow">
-        <h4>18 Carat</h3>
-        <h4 class="_18_caret">-</h3>
+        <h4 class="items">18 Carat</h4>
+        <h4 class="_18_caret items">₹ 0.00</h4>
       </div>
       <div class="tableRow">
-        <h4>16 Carat</h3>
-        <h4 class="_16_caret">-</h3>
+        <h4 class="items">16 Carat</h4>
+        <h4 class="_16_caret items">₹ 0.00</h4>
       </div>
     </div>
+    <h1 class="finalPriceHeader">Calculate The Final Price</h1>
+    <div class="finalPriceDiv">
+      <div class="finalPriceHead">
+        <h4 class="calItems">Gold Price</h4>
+        <h4 class="calItems">Gold Weight</h4>
+        <h4 class="calItems">Making Charge</h4>
+        <h4 class="calItems">Tax%</h4>
+        <!-- <h4 class="calItems">Final Price</h4> -->
+      </div>
+      <div class="finalPriceRow">
+        <input type="number" class="calItems input" id="price" />
+        <input type="number" class="calItems input" id="weight" value="0" />
+        <input
+          type="number"
+          class="calItems input"
+          id="makingCharge"
+          value="22"
+        />
+        <input type="number" class="calItems input" id="tax" value="3" />
+      </div>
+      <button class="calItems finalButton">Calculate</button>
+    </div>
+    <h1 class="finalPriceHeader">Final Price Breakup</h1>
+    <div class="finalBillDiv">
+      <div class="finalBillHead">
+        <h4 class="items">Segment BreakUp</h4>
+        <h4 class="items">Price BreakUp</h4>
+      </div>
+      <div class="finalBillRow">
+        <h4 class="items">Gold Price</h4>
+        <h4 class="items" id="finalGoldPrice">₹ 0.00</h4>
+      </div>
+      <div class="finalBillRow">
+        <h4 class="items">Making Charges</h4>
+        <h4 class="items" id="finalMakingCharges">₹ 0.00</h4>
+      </div>
+      <div class="finalBillRow">
+        <h4 class="items">Tax%</h4>
+        <h4 class="items" id="finalTax">₹ 0.00</h4>
+      </div>
+      <hr class="hr" />
+      <div class="finalBillRow">
+        <h4 class="items">Final Price</h4>
+        <h4 class="items" id="grandFinalPrice">₹ 0.00</h4>
+      </div>
+    </div>
+    <img
+      src="./pngtree-gold-block-metal-bank-value-png-image_3397634-removebg-preview.png"
+      class="goldImageBottom"
+    />
     <footer class="footer">
       <p class="footerCreated">@Created By:</p>
       <p class="footerName">Syed Enayet Ali</p>
